@@ -12,7 +12,7 @@
     "build": "ng build",
     "build:lib": "ng build ngx-dfp --prod",
     "bundle-report": "ng build --prod --stats-json && webpack-bundle-analyzer dist/stats.json",
-    "postinstall": "npm run build:lib"
+    "prepare": "npm run build:lib"
   },
   "dependencies": {
     "@alugha/ima": "^1.1.2",
