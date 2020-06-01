@@ -12,7 +12,7 @@
     "build": "ng build",
     "build:lib": "ng build ngx-dfp --prod",
     "bundle-report": "ng build --prod --stats-json && webpack-bundle-analyzer dist/stats.json",
-    "prepare": "npm run build:lib"
+    "postinstall": "postinstall-build lib build:lib"
   },
   "dependencies": {
     "@alugha/ima": "^1.1.2",
@@ -23,6 +23,7 @@
     "@angular/platform-browser-dynamic": "^6.0.0",
     "@angular/router": "^6.0.0",
     "core-js": "^2.5.4",
+    "postinstall-build": "^5.0.3",
     "rxjs": "6.0.0",
     "video.js": "^7.0.3",
     "zone.js": "~0.8.26"
