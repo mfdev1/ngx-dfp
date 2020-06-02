@@ -11,7 +11,8 @@
     "e2e": "ng e2e",
     "build": "ng build",
     "build:lib": "ng build ngx-dfp --prod",
-    "bundle-report": "ng build --prod --stats-json && webpack-bundle-analyzer dist/stats.json"
+    "bundle-report": "ng build --prod --stats-json && webpack-bundle-analyzer dist/stats.json",
+    "postinstall": "npm i node_modules/ngx-dfp-demo/ngx-dfp-1.6.2.tgz"
   },
   "dependencies": {
     "@alugha/ima": "^1.1.2",
