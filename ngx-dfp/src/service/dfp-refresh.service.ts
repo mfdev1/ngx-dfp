@@ -60,7 +60,9 @@ export class DfpRefreshService {
         this.refreshSlots.forEach(s => {
           googletag.display(s.getSlotElementId());
         });
-        pubads.refresh(this.refreshSlots);
+        if (!this.config.disableRefreshSlots) {
+          pubads.refresh(this.refreshSlots);
+        }
         this.refreshSlots = [];
       });
     } else {
