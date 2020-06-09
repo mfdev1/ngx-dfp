@@ -18,4 +18,5 @@ export class DfpConfig {
   loadGPT?: boolean;
   disableInitialLoad?: boolean;
   onBeforeDisplay?: Function;
+  disableRefreshSlots?: boolean;
 }
